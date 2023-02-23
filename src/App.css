@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1B1B32;
+  color: #FFFFFF;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+header {
+  background-color: #36175E;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  width: 100%;
+}
+
+.header-user-avatar img {
+  border-radius: 50%;
+}
+
+.main-container-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-nfts {
+  width: 70%;
+}
+
+.add-nft-form {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: #36175E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-nft-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.add-nft-form input,
+.add-nft-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #2f2f47;
+  color: #fff;
+}
+
+.add-nft-form textarea {
+  height: 10rem;
+}
+
+.add-nft-form button {
+  background-color: #FFCA08;
+  color: #000000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+
+.content-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  height: 100vh;
+  overflow: auto;
+
+}
+
+.slide-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+  overflow-y: auto;
+  z-index: 1;
+  width: 0;
+  height: 20vh; 
+  background-color: #36175E;
+}
+
+.slide-bar.active {
+  width: 100%;
+  background-color: #36175E;
+  height: 20vh;
+}
+
+.add-nft-btn-container {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 2;
+}
+
+.add-nft-btn {
+  background-color: #36175e;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: auto;
+
+}
