@@ -105,6 +105,8 @@ function Card(props) {
               })`,
           }}
         >
+        </div>
+        <div className='card-footer'>
           <div className="card-name">{props.name}</div>
         </div>
       </div>
