@@ -7,7 +7,7 @@ import MyNFT from './MyNFT.json'
 
 class MyWeb3Helper {
   constructor() {
-    this.alchemyApiKey = "https://polygon-mumbai.g.alchemy.com/v2/Wpo_uP_sn4DEZ7W3EyOBLlZUrjM98ELi";
+    this.alchemyApiKey = "https://polygon-mumbai.g.alchemy.com/v2/...";
     this.web3 = createAlchemyWeb3(this.alchemyApiKey);
     this.address = null;
     this.contractAddress = "0x3C32Dcc02c2737a84F89046532958eE0e750DEF1";
